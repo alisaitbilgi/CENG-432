@@ -34,5 +34,5 @@ class IyteMutableList {
 }
 
 object IyteMutableList {
-  def apply : IyteMutableList = new IyteMutableList()
+  def apply() : IyteMutableList = new IyteMutableList()
 }
