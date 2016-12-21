@@ -7,7 +7,7 @@ trait RandomStuffTrait {
 object RandomStuff extends RandomStuffTrait { 
 
 	def transform(list: List[Int], op: (Int) => Int) : List[Int] = {
-	 for(i <- list) yield op(i);
+		for(i <- list) yield op(i);
 	}
 
 	def allValid(list: List[Int], op: (Int) => Boolean) : Boolean = {
@@ -18,15 +18,13 @@ object RandomStuff extends RandomStuffTrait {
 	def executeWithRetry(retryCount: Int, op: => Int) : Option[Int] = {
 		var i = 0;
 		while(i != retryCount) {
-	      try {
-	        return Option(op)
-	      } catch {
-	        case ex: Exception => { /* do nothing */ }
-	      }
-	      i += 1;
-	  }
-	  None;
+		      try {
+			return Option(op)
+		      } catch {
+			case _: Exception => { /* do nothing */ }
+		      }
+		      i += 1;
+	  	}
+	  	None;
 	}
-
 }
-
