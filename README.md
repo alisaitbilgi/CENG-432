@@ -2,7 +2,7 @@
 
 1) Simple loop example
 
-2) Self implemented both mutable and immutable versions of Scala List implementations, which are created by "not" using Scala's built-in lists.
+2) Self implemented both mutable and immutable versions of Scala List implementations, which are created by "not" using Scala's list collections.
 
 3)Again Self implemented mutable version of the Scala's Set implementation
 
