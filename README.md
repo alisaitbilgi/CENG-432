@@ -1,4 +1,4 @@
-# THERE ARE 5 PROJECTS AVAILABLE THERE,
+# there are 5 projects available here;
 
 1) Simple loop example
 
